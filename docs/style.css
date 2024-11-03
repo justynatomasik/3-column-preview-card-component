@@ -1,0 +1,141 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --teal: hsl(184, 100%, 22%);
+  --dark-teal: hsl(179, 100%, 13%);
+  --white: hsla(0, 0%, 100%, 0.75);
+  --gray: hsl(0, 0%, 95%);
+}
+body {
+  display: flex;
+  min-height: 100svh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+  color: var(--white);
+  font-family: "Lexend Deca", serif;
+  line-height: 1.5;
+}
+
+div.wrapper-main div {
+  max-width: 20rem;
+  padding: 50px;
+}
+div.wrapper-main > div:first-of-type {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+div.wrapper-main > div:last-of-type {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.wrapper-orange {
+  background-color: var(--orange);
+}
+.wrapper-teal {
+  background-color: var(--teal);
+}
+.wrapper-darkteal {
+  background-color: var(--dark-teal);
+}
+
+.wrapper-header {
+  font-family: "Big Shoulders Display", serif;
+  font-size: 2.5rem;
+  color: var(--gray);
+}
+.wrapper-button {
+  border-radius: 25px;
+  border-color: var(--white);
+  padding: 12px 25px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+div.wrapper-orange button {
+  color: var(--orange);
+}
+div.wrapper-teal button {
+  color: var(--teal);
+}
+div.wrapper-darkteal button {
+  color: var(--dark-teal);
+}
+
+.wrapper-img {
+  height: auto;
+}
