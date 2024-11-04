@@ -15,8 +15,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 The second challenge I took form Frontend Mentor.
 
@@ -27,7 +25,7 @@ The second challenge I took form Frontend Mentor.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://justynatomasik.github.io/3-column-preview-card-component/)
+- Solution URL: (https://justynatomasik.github.io/3-column-preview-card-component/)
 
 ## My process
 
